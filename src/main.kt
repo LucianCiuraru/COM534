@@ -1,5 +1,5 @@
 fun main(){
-    val Lucian = Student("Lucian","Lucian", course = "Computer Science", mark = 9.66)
+    val Lucian = Student("Lucian","Lucian", course = "Computer Science", markIn = 96.00)
     println(Lucian)
     while(true){
         print("Enter student name (or 'quit' to exit):")
@@ -16,7 +16,7 @@ fun main(){
         print("Enter your mark: ")
         val mark = readln().toDouble()
 
-        val student= Student(id = id,name = name,course = course, mark = mark)
+        val student= Student(id = id,name = name,course = course, markIn = mark)
         println(student)
     }
 }
