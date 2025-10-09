@@ -17,6 +17,9 @@ class Student (val id: String, val name: String, val course: String, markIn: Dou
             else -> "Fail"
         }
     }
+    fun didPass(): Boolean {
+        return mark >= 40
+    }
     override fun toString(): String {
         return "Name: $name, Course: $course, Grade: ${getGrade()}"
     }
